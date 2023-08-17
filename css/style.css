@@ -1,9 +1,43 @@
 @charset "UTF-8";
 
-.square {
+.box--red {
   width: 400px;
   height: 400px;
-  color: #f00;
-  background:#ced;
-  border:1px solid #a7e;
+  background: #f00;
+  margin: 0 auto;
+}
+
+.box--purple {
+  width: 400px;
+  height: 400px;
+  background: #0008ff;
+  margin: 0 auto;  
+}
+
+.box--green {
+  width: 400px;
+  height: 400px;
+  background: #22ff00;
+  margin: 0 auto;  
+}
+
+.box--orange {
+  width: 400px;
+  height: 400px;
+  background: #ff8400;
+  margin: 0 auto; 
+}
+
+.box--yellowgreen{
+  width: 400px;
+  height: 400px;
+  background: #d4ff00;
+  margin: 0 auto; 
+}
+
+.box--pink{
+  width: 400px;
+  height: 400px;
+  background: #ff00e1;
+  margin: 0 auto; 
 }
