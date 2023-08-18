@@ -18,7 +18,9 @@
   width: 400px;
   height: 400px;
   background: #22ff00;
-  margin: 0 auto;  
+  margin: 0 auto;
+  display: grid;
+  place-items: center; 
 }
 
 .box--orange {
@@ -33,6 +35,8 @@
   height: 400px;
   background: #d4ff00;
   margin: 0 auto; 
+  display: grid;
+  place-items: center;
 }
 
 .box--pink{
@@ -40,4 +44,6 @@
   height: 400px;
   background: #ff00e1;
   margin: 0 auto; 
+  display: grid;
+  place-items: center;
 }
