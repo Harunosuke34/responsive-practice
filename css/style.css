@@ -1,49 +1,37 @@
 @charset "UTF-8";
 
-.box--red {
+.box {
   width: 400px;
   height: 400px;
+  margin: 0 auto;
+}
+
+.red {
   background: #f00;
-  margin: 0 auto;
 }
 
-.box--purple {
-  width: 400px;
-  height: 400px;
+.purple {
   background: #0008ff;
-  margin: 0 auto;  
 }
 
-.box--green {
-  width: 400px;
-  height: 400px;
+.green {
   background: #22ff00;
-  margin: 0 auto;
   display: grid;
   place-items: center; 
 }
 
-.box--orange {
-  width: 400px;
-  height: 400px;
+.orange {
   background: #ff8400;
-  margin: 0 auto; 
 }
 
-.box--yellowgreen{
-  width: 400px;
-  height: 400px;
-  background: #d4ff00;
-  margin: 0 auto; 
+.yellowgreen{
+  background: #d4ff00; 
   display: grid;
   place-items: center;
 }
 
-.box--pink{
-  width: 400px;
-  height: 400px;
+.pink{
   background: #ff00e1;
-  margin: 0 auto; 
   display: grid;
   place-items: center;
 }
