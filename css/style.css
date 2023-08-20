@@ -1,56 +1,89 @@
 @charset "UTF-8";
 
-.box {
-  width: 300px;
-  height: 300px;
-  margin: 0 auto;
+.question--title {
+  margin: 10px 10px;
+  width: 500px;
+  height: 40px;
 }
 
-.box-red-1 {
+.group {
+  display: flex;
+  justify-content: center;
+}
+
+.box-red-q1 {
   width: 400px;
   height: 400px;
   margin: 0 auto;
 }
 
-.box-red-1 , .red-2 , .red-3 , .red-4 , .red-5{
+.red-q2 {
+  margin: 0 auto;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+}
+
+.box-red-q1,
+.red-q2,
+.red-q4,
+.red-q5,
+.red-q7 {
   background: #f00;
 }
 
-
-@media screen and (min-width:960px) { 
-  .box-red-1 {
+@media screen and (min-width:960px) {
+  .box-red-q1 {
     width: 200px;
     height: 200px;
   }
 }
 
-@media screen and (min-width:960px) { 
-  .red-2 {
+@media screen and (min-width:960px) {
+  .red-q2 {
     background: #007bff;
   }
 }
 
-.purple {
+/*ここ
+. {
+  margin: 10px 10px;
+  float: left;
+}
+*/
+
+.blue , 
+.green , 
+.orange , 
+.yellowgreen , 
+.pink ,  .red-q2 , .red-q4 , 
+.red-q5 , .red-q7 {
+
+}
+
+.blue {
   background: #0008ff;
 }
 
 .green {
   background: #22ff00;
   display: grid;
-  place-items: center; 
+  place-items: center;
 }
 
 .orange {
   background: #ff8400;
 }
 
-.yellowgreen{
-  background: #d4ff00; 
+.yellowgreen {
+  background: #d4ff00;
   display: grid;
   place-items: center;
 }
 
-.pink{
+.pink {
   background: #ff00e1;
   display: grid;
   place-items: center;
