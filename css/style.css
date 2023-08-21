@@ -52,7 +52,7 @@
   margin: 10px 10px;
   float: left;
 }
-*/
+
 
 .blue , 
 .green , 
@@ -62,15 +62,39 @@
 .red-q5 , .red-q7 {
 
 }
+*/
 
-.blue {
+.blue , .blue-1 , .blue-2{
   background: #0008ff;
 }
 
-.green {
+.group-float {
+  display: flex;
+  justify-content: center;
+}
+
+/*今ここ*/
+@media screen and (min-width:960px) {
+  .group-float {
+    display: inline-block;
+    
+  }
+}
+
+.green , .green-1 {
   background: #22ff00;
   display: grid;
   place-items: center;
+}
+
+.green-1 {
+  margin-left: 150px ;
+}
+
+@media screen and (min-width:960px) {
+  .green-1 {
+    margin-left: 50px ;
+  }
 }
 
 .orange {
