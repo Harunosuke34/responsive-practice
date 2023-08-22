@@ -7,10 +7,36 @@
 }
 
 
-.group {
+.group , .group-q5 , .group-q6 {
   display: flex;
   justify-content: center;
 }
+
+@media screen and (min-width:960px) {
+  .group-q5{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .pink{
+  order: 1;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .green-q6{
+  order: 2;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .yellowgreen{
+  order: 3;
+  }
+}
+
 
 .box-red-q1 {
   width: 400px;
@@ -82,8 +108,14 @@
   }
 }
 
-.green , .green-1 {
+
+
+.green , .green-1 , .green-q6 {
   background: #22ff00;
+}
+
+/*文字入れ*/
+.green-q6 , .yellowgreen , .pink , .red-q5 , .blue ,.orange {
   display: grid;
   place-items: center;
 }
@@ -104,12 +136,8 @@
 
 .yellowgreen {
   background: #d4ff00;
-  display: grid;
-  place-items: center;
 }
 
 .pink {
   background: #ff00e1;
-  display: grid;
-  place-items: center;
 }
