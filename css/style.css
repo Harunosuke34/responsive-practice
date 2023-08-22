@@ -91,7 +91,7 @@
 }
 */
 
-.blue , .blue-1 , .blue-2{
+.blue-q7 , .blue-q3 , .blue-q4 , .blue-q5{
   background: #0008ff;
 }
 
@@ -110,22 +110,22 @@
 
 
 
-.green , .green-1 , .green-q6 {
+.green , .green-q3 , .green-q6 {
   background: #22ff00;
 }
 
 /*文字入れ*/
-.green-q6 , .yellowgreen , .pink , .red-q5 , .blue ,.orange {
+.green-q6 , .yellowgreen , .pink , .red-q5 , .blue-q5 ,.orange {
   display: grid;
   place-items: center;
 }
 
-.green-1 {
+.green-q3 {
   margin-left: 150px ;
 }
 
 @media screen and (min-width:960px) {
-  .green-1 {
+  .green-q3 {
     margin-left: 50px ;
   }
 }
@@ -140,4 +140,17 @@
 
 .pink {
   background: #ff00e1;
+}
+
+/*Q7*/
+@media screen and (min-width:960px) {
+  .red-q7 {
+    display:none;
+    }
+}
+
+@media screen and (max-width:959px) {
+  .blue-q7{
+    display:none;
+    }
 }
