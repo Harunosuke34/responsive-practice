@@ -96,15 +96,28 @@
 }
 
 .group-float {
-  display: flex;
-  justify-content: center;
+  width: 960px;
+  height: 300px;
+  text-align:center;
+  display:inline-block;
+}
+
+.red-q4 , .blue-q4 {
+  float: left;
+  width: 300px;
+  
 }
 
 /*今ここ*/
 @media screen and (min-width:960px) {
   .group-float {
-    display: inline-block;
-    
+    height: 600px;
+  }
+}
+
+@media screen and (min-width:960px) {
+  .red-q4 , .blue-q4 {
+    float: none;
   }
 }
 
