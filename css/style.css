@@ -12,26 +12,26 @@
   justify-content: center;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .group-q5{
     display: flex;
     flex-direction: row-reverse;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .pink{
   order: 1;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .green-q6{
   order: 2;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .yellowgreen{
   order: 3;
   }
@@ -61,14 +61,14 @@
   background: #f00;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .box-red-q1 {
     width: 200px;
     height: 200px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .red-q2 {
     background: #007bff;
   }
@@ -109,13 +109,13 @@
 }
 
 /*今ここ*/
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .group-float {
     height: 600px;
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .red-q4 , .blue-q4 {
     float: none;
   }
@@ -137,7 +137,7 @@
   margin-left: 150px ;
 }
 
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .green-q3 {
     margin-left: 50px ;
   }
@@ -156,7 +156,7 @@
 }
 
 /*Q7*/
-@media screen and (min-width:960px) {
+@media screen and (max-width:960px) {
   .red-q7 {
     display:none;
     }
