@@ -7,34 +7,11 @@
 }
 
 
-.group , .group-q5 , .group-q6 {
+.group,
+.group-q5,
+.group-q6 {
   display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width:959px) {
-  .group-q5{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-
-@media screen and (max-width:959px) {
-  .pink{
-  order: 1;
-  }
-}
-
-@media screen and (max-width:959px) {
-  .green-q6{
-  order: 2;
-  }
-}
-
-@media screen and (max-width:959px) {
-  .yellowgreen{
-  order: 3;
-  }
 }
 
 
@@ -61,18 +38,6 @@
   background: #f00;
 }
 
-@media screen and (max-width:959px) {
-  .box-red-q1 {
-    width: 200px;
-    height: 200px;
-  }
-}
-
-@media screen and (max-width:959px) {
-  .red-q2 {
-    background: #007bff;
-  }
-}
 
 /*ここ
 . {
@@ -91,7 +56,10 @@
 }
 */
 
-.blue-q7 , .blue-q3 , .blue-q4 , .blue-q5{
+.blue-q7,
+.blue-q3,
+.blue-q4,
+.blue-q5 {
   background: #0008ff;
 }
 
@@ -111,11 +79,11 @@
   /*↓この二つが崩れる原因*/
   left: 50%;
   float: left;
-  
+
 }
 
 /*子要素？*/
-.q4{
+.q4 {
   /*↓中央によったけどQ5,Q6が端に外れてしまう*/
   position: relative;
   /*↓この二つが崩れる原因*/
@@ -123,38 +91,30 @@
   float: left;
 }
 
-/*子要素？*/
-
-@media screen and (max-width:959px) {
-  .group-float {
-    height: 600px;
-    
-  }
-  .q4{
-    float: none;
-    left: 0%;
-  }
-}  
+.blue-q7 {
+  display: none;
+}
 
 
-.green , .green-q3 , .green-q6 {
+.green,
+.green-q3,
+.green-q6 {
   background: #22ff00;
 }
 
 /*文字入れ*/
-.green-q6 , .yellowgreen , .pink , .red-q5 , .blue-q5 ,.orange {
+.green-q6,
+.yellowgreen,
+.pink,
+.red-q5,
+.blue-q5,
+.orange {
   display: grid;
   place-items: center;
 }
 
 .green-q3 {
-  margin-left: 150px ;
-}
-
-@media screen and (max-width:959px) {
-  .green-q3 {
-    margin-left: 50px ;
-  }
+  margin-left: 150px;
 }
 
 .orange {
@@ -169,15 +129,55 @@
   background: #ff00e1;
 }
 
-/*Q7*/
-@media screen and (max-width:959px) {
-  .red-q7 {
-    display:none;
-    }
-}
 
 @media screen and (max-width:959px) {
-  .blue-q7{
-    display:none;
-    }
+  .group-q5 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .pink {
+    order: 1;
+  }
+
+  .green-q6 {
+    order: 2;
+  }
+
+  .yellowgreen {
+    order: 3;
+  }
+
+  .box-red-q1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .red-q2 {
+    background: #007bff;
+  }
+
+  .group-float {
+    height: 600px;
+
+  }
+
+  .q4 {
+    float: none;
+    left: 0%;
+  }
+
+  .green-q3 {
+    margin-left: 50px;
+  }
+
+  .red-q7 {
+    display: none;
+  }
+
+  .blue-q7 {
+    display: grid;
+  }
 }
+
+/*Q7*/
