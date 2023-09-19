@@ -14,20 +14,41 @@
   justify-content: center;
 }
 
+/*q6の並び替え*/
+.group-q6{
+  border: 1;
+}
 
+.yellowgreen{
+  border: 2;
+}
+
+.pink{
+  border: 3;
+}
+
+/*q5*/
+.group-q5{
+  flex-direction: row;
+}
+
+/*Q1*/
 .box-red-q1 {
   width: 400px;
   height: 400px;
   margin: 0 auto;
 }
 
+/*q2*/
 .red-q2 {
   margin: 0 auto;
 }
+/**/
 
 .box {
   width: 300px;
   height: 300px;
+  display: block;
 }
 
 .box-red-q1,
@@ -64,15 +85,15 @@
 }
 
 
-/*ここ*/
 
+/*q4*/
 .clearfix::after {
   content: "";
   display: block;
   clear: both;
 }
 
-/*親要素？*/
+/*q4の親要素*/
 .group-float {
   /*↓中央によったけどQ5,Q6が端に外れてしまう*/
   position: relative;
@@ -82,7 +103,7 @@
 
 }
 
-/*子要素？*/
+/*q4の子要素*/
 .q4 {
   /*↓中央によったけどQ5,Q6が端に外れてしまう*/
   position: relative;
@@ -91,11 +112,13 @@
   float: left;
 }
 
+/*q7*/
 .blue-q7 {
   display: none;
 }
+/**/
 
-
+/*みどり*/
 .green,
 .green-q3,
 .green-q6 {
@@ -113,10 +136,12 @@
   place-items: center;
 }
 
+/*q3*/
 .green-q3 {
   margin-left: 150px;
 }
 
+/*オレンジ・黄緑・ピンク*/
 .orange {
   background: #ff8400;
 }
@@ -128,14 +153,17 @@
 .pink {
   background: #ff00e1;
 }
-
+/**/
 
 @media screen and (max-width:959px) {
+  
+  /*q5*/
   .group-q5 {
-    display: flex;
+    
     flex-direction: row-reverse;
   }
-
+  
+  /*q6*/
   .pink {
     order: 1;
   }
@@ -148,15 +176,18 @@
     order: 3;
   }
 
+  /*q1*/
   .box-red-q1 {
     width: 200px;
     height: 200px;
   }
 
+  /*q2*/
   .red-q2 {
     background: #007bff;
   }
 
+  /*q4*/
   .group-float {
     height: 600px;
 
@@ -167,16 +198,18 @@
     left: 0%;
   }
 
+  /*q3*/
   .green-q3 {
     margin-left: 50px;
   }
 
+  /*q7*/
   .red-q7 {
     display: none;
   }
 
   .blue-q7 {
-    display: grid;
+    display: block;
   }
 }
 
