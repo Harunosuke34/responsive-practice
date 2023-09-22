@@ -99,7 +99,8 @@
   position: relative;
   /*↓この二つが崩れる原因*/
   left: 50%;
-  float: left;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -189,8 +190,8 @@
 
   /*q4*/
   .group-float {
-    height: 600px;
-
+    height: 600px; 
+    display: block;
   }
 
   .q4 {
