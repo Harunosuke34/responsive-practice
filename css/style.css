@@ -87,34 +87,24 @@
   background: #0008ff;
 }
 
+.clearfix{
+  width: 100%;
 
-
-/*q4*/
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
 }
 
-/*q4の親要素*/
-.group-float {
-  /*↓中央によったけどQ5,Q6が端に外れてしまう*/
-  position: relative;
-  /*↓この二つが崩れる原因*/
-  left: 50%;
+/*q4 回り込みの解除*/
+.group-Q4{
   display: flex;
   justify-content: center;
-
 }
 
 /*q4の子要素*/
 .q4 {
-  /*↓中央によったけどQ5,Q6が端に外れてしまう*/
-  position: relative;
-  /*↓この二つが崩れる原因*/
-  left: -50%;
-  float: left;
+  display: flex;
+  justify-content: center; /* 横方向の中央寄せ */
+  align-items: center; /* 縦方向の中央寄せ */
 }
+
 
 /*q7*/
 .blue-q7 {
@@ -192,14 +182,14 @@
   }
 
   /*q4*/
-  .group-float {
-    height: 600px; 
-    display: block;
-  }
+
+  .group-Q4{
+  flex-direction: column;
+  align-items: center;
+}
 
   .q4 {
-    float: none;
-    left: 0%;
+  display: block;
   }
 
   /*q3*/
