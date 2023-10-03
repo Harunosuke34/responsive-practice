@@ -4,8 +4,8 @@
   margin: 10px auto;
   width: 500px;
   height: 40px;
+  clear:both;
 }
-
 
 .group,
 .group-q5,
@@ -16,15 +16,15 @@
 
 /*q6の並び替え*/
 .group-q6{
-  border: 1;
+  order: 1;
 }
 
 .yellowgreen{
-  border: 2;
+  order: 2;
 }
 
 .pink{
-  border: 3;
+  order: 3;
 }
 
 /*q5*/
@@ -87,22 +87,30 @@
   background: #0008ff;
 }
 
-.clearfix{
-  width: 100%;
-
-}
 
 /*q4 回り込みの解除*/
 .group-Q4{
-  display: flex;
-  justify-content: center;
+
+  /*画面左側に余白を作る*/
+  position: relative;
+  left: 50%;
+  float: left;
 }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 
 /*q4の子要素*/
 .q4 {
-  display: flex;
-  justify-content: center; /* 横方向の中央寄せ */
-  align-items: center; /* 縦方向の中央寄せ */
+
+  /*親要素で作った余白のうち半分(50%)を左に動かす*/
+  position: relative;
+  left: -50%;
+  float: left;
 }
 
 
@@ -190,6 +198,7 @@
 
   .q4 {
   display: block;
+
   }
 
   /*q3*/
