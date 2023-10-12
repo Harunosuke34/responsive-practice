@@ -15,7 +15,7 @@
 }
 
 /*q6の並び替え*/
-.group-q6{
+.green--q6{
   order: 1;
 }
 
@@ -107,9 +107,6 @@
 /*q4の子要素*/
 .q4 {
 
-  /*親要素で作った余白のうち半分(50%)を左に動かす*/
-  position: relative;
-  left: -50%;
   float: left;
 }
 
@@ -123,12 +120,12 @@
 /*みどり*/
 .green,
 .green-q3,
-.green-q6 {
+.green--q6 {
   background: #22ff00;
 }
 
 /*文字入れ*/
-.green-q6,
+.green--q6,
 .yellowgreen,
 .pink,
 .red-q5,
@@ -170,7 +167,7 @@
     order: 1;
   }
 
-  .green-q6 {
+  .green--q6 {
     order: 2;
   }
 
@@ -191,13 +188,8 @@
 
   /*q4*/
 
-  .group-Q4{
-  flex-direction: column;
-  align-items: center;
-}
-
   .q4 {
-  display: block;
+  float:none;
 
   }
 
