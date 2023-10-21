@@ -16,15 +16,15 @@
 
 /*q6の並び替え*/
 .green--q6{
-  order: 1;
+  order: 0;
 }
 
 .yellowgreen{
-  order: 2;
+  order: 1;
 }
 
 .pink{
-  order: 3;
+  order: 2;
 }
 
 /*q5*/
@@ -90,11 +90,8 @@
 
 /*q4 回り込みの解除*/
 .group-Q4{
-
-  /*画面左側に余白を作る*/
-  position: relative;
-  left: 50%;
-  float: left;
+  margin: 0 auto;
+  width: 600px;
 }
 
 .clearfix::after {
@@ -106,7 +103,7 @@
 
 /*q4の子要素*/
 .q4 {
-
+  
   float: left;
 }
 
@@ -164,15 +161,15 @@
   
   /*q6*/
   .pink {
-    order: 1;
+    order: 0;
   }
 
   .green--q6 {
-    order: 2;
+    order: 1;
   }
 
   .yellowgreen {
-    order: 3;
+    order: 2;
   }
 
   /*q1*/
