@@ -16,15 +16,15 @@
 
 /*q6の並び替え*/
 .green--q6{
-  order: 0;
-}
-
-.yellowgreen{
   order: 1;
 }
 
-.pink{
+.yellowgreen{
   order: 2;
+}
+
+.pink{
+  order: 3;
 }
 
 /*q5*/
@@ -160,17 +160,17 @@
   }
   
   /*q6*/
-  .pink {
-    order: 0;
-  }
+.green--q6{
+  order: 2;
+}
 
-  .green--q6 {
-    order: 1;
-  }
+.yellowgreen{
+  order: 3;
+}
 
-  .yellowgreen {
-    order: 2;
-  }
+.pink{
+  order: 1;
+}
 
   /*q1*/
   .box-red-q1 {
